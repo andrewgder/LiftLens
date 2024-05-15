@@ -1,1 +1,2 @@
 # LiftLens
+LiftLens is an innovative web application designed for fitness enthusiasts to document their lifting journey. Users can effortlessly upload videos showcasing their workouts, facilitating progress tracking and sharing with fellow fitness enthusiasts. The platform fosters collaboration by enabling users to engage with others for technique evaluations, form assessments, and constructive feedback, thereby promoting continual improvement and community support
