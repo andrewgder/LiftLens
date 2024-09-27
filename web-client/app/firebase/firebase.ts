@@ -14,6 +14,7 @@ import {
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
+  //invalid key - used for local host only
   apiKey: "AIzaSyD6tPfbwRmJxU3PQvgxf6ZdQxaafAbYQfQ",
   authDomain: "lift-lens.firebaseapp.com",
   projectId: "lift-lens",
