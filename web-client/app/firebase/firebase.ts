@@ -1,6 +1,5 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import {
   getAuth,
   signInWithPopup,
@@ -15,7 +14,7 @@ import {
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   //invalid key - used for local host only
-  apiKey: "AIzaSyD6tPfbwRmJxU3PQvgxf6ZdQxaafAbYQfQ",
+  apiKey: "AIzaSyCTTJdzRoSr0Aj5HQyunlryFo4d0oM3JNQ",
   authDomain: "lift-lens.firebaseapp.com",
   projectId: "lift-lens",
   appId: "1:725695812835:web:b9d6b3227ad7e9afcd61d6",
@@ -25,7 +24,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const analytics = getAnalytics(app);
 
 /**
  * Signs the user in with a Google popup.
