@@ -6,6 +6,7 @@ import SignIn from "./sign-in";
 import { onAuthStateChangedHelper } from "../firebase/firebase";
 import { useState, useEffect } from "react";
 import { User } from "firebase/auth";
+import Upload from "./upload";
 
 export default function Navbar() {
   //initialize user state
@@ -28,6 +29,7 @@ export default function Navbar() {
           alt="Lift Lens Logo"
         ></Image>
       </Link>
+      {user && <Upload></Upload>}
       <SignIn user={user} />
     </nav>
   );
