@@ -1,0 +1,47 @@
+/* Base styling for the delete button */
+.deleteButton {
+  background-color: #e74c3c; /* Red color */
+  color: white; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect to indicate interactivity */
+.deleteButton:hover {
+  background-color: #c0392b; /* Darker red */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow */
+}
+
+/* Focus effect for keyboard accessibility */
+.deleteButton:focus {
+  outline: 2px solid #c0392b; /* Outline matching hover color */
+  outline-offset: 2px;
+}
+
+/* Active state for button press effect */
+.deleteButton:active {
+  background-color: #a93226; /* Even darker red */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Reduced shadow */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+}
+
+.videoContainer {
+  width: 80vw; /* Set video container width */
+  max-width: 640px; /* Max width for larger screens */
+  height: 45vw; /* Aspect ratio 16:9 */
+  max-height: 360px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

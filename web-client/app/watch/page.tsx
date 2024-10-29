@@ -1,5 +1,5 @@
 "use client";
-
+import styles from "./watch.module.css";
 import { useSearchParams } from "next/navigation";
 
 export default function Watch() {
@@ -8,9 +8,16 @@ export default function Watch() {
   const videoSrc = useSearchParams().get("v");
 
   return (
-    <div>
+    <div className={styles.container}>
       <h1>Watch Page</h1>
-      {<video controls src={videoPrefix + videoSrc} />}
+      {
+        <video
+          className={styles.videoContainer}
+          controls
+          src={videoPrefix + videoSrc}
+        />
+      }
+      <button className={styles.deleteButton}>Delete Video</button>
     </div>
   );
 }
